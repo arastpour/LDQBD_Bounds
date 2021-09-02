@@ -7,6 +7,6 @@ This program includes 8 MATLAB `.m` files as described below:
 3. `function_class2waiting.m` is called to compute bounds on the Class-2 Wait Probability. If a user is interested in another performance measure, this file should be updated.
 4. `function_ErlangA_truncation_level.m` calculates the truncation phase, $p^\ast$.
 5. `function_Q.m` forms block matrices of the infiniteseimal matrix at any desired level ell
-6. `function_R_low_and_up.m` calculates the bounds on the rate matrices at any desired level ell
-7. `function_tau_cond.m` calcualtes the threshold level $\ell^\tau$
+6. `function_R_low_and_up.m` calculates bounds on the rate matrices of level ell, for ell = 0, 1, ... .
+7. `function_tau_cond.m` calcualtes the threshold level $\ell^\tau$, above which rate matrices become non-increasing.
 8. `function_x0.m` calculates the unnormalized stationary distribution of Level 0.
