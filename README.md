@@ -1,5 +1,4 @@
-The program in this repository is an implementation of the algorithm that is developed for calculateing bounds on performance measures of an Erlang A system with two priority classes, as reported in the following paper:
-Rastpour, A. A. Ingolfsson, B. Sandıkcı. (2021) Algorithms for queueing systems with reneging and priorities modeled as quasi-birth-death processes. *INFORMS Journal on Computing*; Under Minor Revision.
+The program in this repository is an implementation of Algorithm 5 reported in the following paper: Rastpour, A. A. Ingolfsson, B. Sandıkcı. (2021) Algorithms for queueing systems with reneging and priorities modeled as quasi-birth-death processes. *INFORMS Journal on Computing*; Under Minor Revision. This algorithm is developed for calculateing bounds on performance measures of an Erlang A system with two priority classes.
 
 Software requirement: this program has to be run on MATLAB R2019, or newer versions of MATLAB.
 
