@@ -1,6 +1,8 @@
 The program in this repository is an implementation of the algorithm that is developed for calculateing bounds on performance measures of an Erlang A system with two priority classes, as reported in the following paper:
 Rastpour, A. A. Ingolfsson, B. Sandıkcı. (2021) Algorithms for queueing systems with reneging and priorities modeled as quasi-birth-death processes. *INFORMS Journal on Computing*; Under Minor Revision.
 
+Software requirement: this program has to be run on MATLAB R2019, or newer versions of MATLAB.
+
 This program includes 8 MATLAB `.m` files as described below:
 1. `Main.m` is the main file, which is used to take user inputs and calls all other functions to calculate the bounds.
 2. `function_BlockTridiagonalInverse2.m` calculates the inverse of a block-tridiagonal matrix using its properties.
