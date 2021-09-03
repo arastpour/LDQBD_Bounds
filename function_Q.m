@@ -16,16 +16,11 @@ function Qmatrix = function_Q(matNumber, ell, maxPhase, lambda1, lambda2, mu1, m
     end
     
     %Matrix Q1. Note that we need to have Q0 and Q2 to calculate the diagonal elements of Q1
-%     for  i = 1:maxPhase %above the diagonal
-%         Q1(i, i+1) = (lambda1);
-%     end
     Q1 = Q1 + diag(lambda1*ones(1,maxPhase),1);
         
     for i = 2:maxPhase+1 %below the diagonal
         ii = i -1; % class 1 count
         m = min (ii, c);  % count of servers serving class 1
-        %e = c - m;
-        %n = min (ell, e);
         maxx = max(ii - m, 0);
         Q1(i, i-1) = m * mu1 + maxx * gamma1; 
     end        
@@ -42,10 +37,6 @@ function Qmatrix = function_Q(matNumber, ell, maxPhase, lambda1, lambda2, mu1, m
     elseif matNumber == 2 %Matrix Q2 
         Qmatrix = Q2;
     end
-
-
-
-    
 end
 
 
