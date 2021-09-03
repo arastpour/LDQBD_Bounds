@@ -10,7 +10,7 @@ function [lower_x0, upper_x0,varDrop] = function_x0(Q_1_0, Q_2_1, lower_R0, uppe
         lower_k = Q_1_0 + lower_z;
         lower_k_cut = lower_k;
         lower_k_cut (varDrop, :) = [];
-        lower_k_cut (:, varDrop) = [];    
+        lower_k_cut (:, varDrop) = [];
         lower_b_cut = - lower_k(varDrop, :);
         lower_b_cut (:, varDrop) = [];
         lastwarn('') % it is to reset lastwarn
